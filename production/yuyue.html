@@ -18,6 +18,8 @@
   <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
   <!-- iCheck -->
   <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom Theme Style -->
   <link href="../build/css/custom.min.css" rel="stylesheet">
@@ -141,8 +143,58 @@
       <!-- /top navigation -->
 
       <!-- page content -->
-      <div class="right_col" role="main" style="min-height: 1161px;">
-        首页展示内容处
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>预约列表
+                    <!-- <small>Users</small> -->
+                  </h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='shops_add.html'">添加</button>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <table id="datatable" class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>项目</th>
+                        <th>人员</th>
+                        <th>产品</th>
+                        <th>时间</th>
+                        <th>备注</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                      <tr>
+                        <td><span>美容</span><span>按摩</span></td>
+                        <td><span>王磊</span> <span>刘欣</span></td>
+                        <td><span>洗面奶</span></td>
+                        <td><span>2017-8-10 15:00</span></td>
+                        <td><span>帮我好好按一按</span></td>
+                        <td>
+                          <a href="#" class="btn btn-info btn-xs">
+                            <i class="fa fa-pencil"></i> 修改 </a>
+                          <a href="#" class="btn btn-danger btn-xs">
+                            <i class="fa fa-trash-o"></i> 删除 </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+      
+      
+          </div>
+        </div>
       </div>
       <!-- /page content -->
 
@@ -159,6 +211,11 @@
   <script src="../vendors/nprogress/nprogress.js"></script>
   <!-- iCheck -->
   <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- Datatables -->
+  <!-- 表格基础功能 -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <!-- 表格响应式美化 -->
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
   <!-- Custom Theme Scripts -->
   <script src="../build/js/custom.min.js"></script>
